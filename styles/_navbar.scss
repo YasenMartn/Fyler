@@ -1,0 +1,24 @@
+.navbar{
+    width: 100%;
+    height: 70px;
+    background-color: $niceblue;
+    position: sticky;
+    top: 0;
+    z-index: 222;
+    @include flexBetween();
+    color: white;
+    padding: 0 20px;
+    .logoContainer{
+        @include flexCenter();
+        .logoName{
+            font-size: 1.5rem;
+            margin-left: 10px;
+        }
+    }
+    .naviesContainer{
+        .navies{
+            margin-left: 20px;
+            cursor: pointer;
+        }
+    }
+}
