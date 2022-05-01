@@ -1,0 +1,155 @@
+.footer{
+    width: 100%;
+    min-height: calc((100vh - 70px) / 2);
+    background-color:  $darkBlue_2;
+    @include flexColumn();
+    .top{
+        width: 100%;
+        min-height: calc(((100vh - 70px) / 2) / 2);
+        color: white;
+        @include flexCenter();
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding-left: 50px;
+        .logoContainer{
+            @include flexCenter();
+            margin-bottom: 50px;
+            .logoName{
+                font-size: 2rem;
+                margin-left: 20px;
+            }
+        }
+    }
+    .bottom{
+        width: 100%;
+        min-height: calc(((100vh - 70px) / 2) / 2);
+        @include flexCenter();
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 50px;
+        color: white;
+        flex-wrap: wrap;
+        .locationContainer{
+            flex: 2;
+            @include flexCenter();
+            align-items: flex-start;
+            height: 100%;
+            padding-right: 20px;
+            .locInfo{
+                margin-left: 10px;
+                line-height: 25px;
+            }
+        }
+        .callingContainer{
+            flex: 2;
+            height: 100%;
+            @include flexColumn();
+            align-items: flex-start;
+            padding-right: 20px;
+            .callContainer{
+                @include flexCenter();
+                .text{
+                    margin-left: 20px;
+                }
+                &:first-child{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .linkContainer{
+            flex: 2;
+            height: 100%;
+            min-height: calc(((100vh - 70px) / 2) / 2);
+            @include flexCenter();
+            align-items: flex-start;
+            flex-wrap: wrap;
+            .half{
+                flex: 1;
+                height: 100%;
+                @include flexColumn();
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding-right: 40px;
+                gap: 1.5rem;
+                padding-bottom: 20px;
+                .link{
+                    cursor: pointer;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            
+        }
+        .socialsContainer{
+            flex: 1;
+            height: 100%;
+            @include flexCenter();
+            align-items: flex-start;
+            .iconContainer{
+                border-radius: 50%;
+                border: 1px solid white;
+                @include flexCenter();
+                padding: 7px;
+                margin: 10px;
+                margin-top: 0;
+                cursor: pointer;
+                .icon{
+                    transition: .5s all ease-in-out;
+
+                }
+                &:hover {
+                    background-color: $green;
+                    color: black;
+                    .icon{
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .footer{
+        .top{
+            min-height: auto;
+            @include flexCenter();
+            padding: 0;
+            padding: 20px;
+            .logoContainer{
+                margin: 0;
+            }
+        }
+        .bottom{
+            flex-direction: column;
+            padding-left: 0;
+            .locationContainer{
+                width: 100%;
+                @include flexCenter();
+                padding: 20px;
+            }
+            .callingContainer{
+                width: 100%;
+                @include flexCenter();
+                padding: 20px;
+            }
+            .linkContainer{
+                width: 100%;
+                padding: 20px 50px;
+                .half{
+                    align-items: center;
+                    
+                }
+               
+            }
+            .socialsContainer{
+                width: 100%;
+                @include flexCenter();
+                padding: 20px;
+            }
+        }
+    }
+    
+}

@@ -24,3 +24,24 @@ export const servicesData = [
         desc: "Whether you're sharing holidays photos or work documents. Fyler has you covered allowing for all file types to be securely stored and shared."
     },
 ]
+
+export const testimons = [
+    {
+        id: 1,
+        desc: "Fyler has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
+        name: "John Smith",
+        job: "Web Developer"
+    },
+    {
+        id: 2,
+        desc: "Fyler has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
+        name: "John Doe",
+        job: "Recruter & Trade CEO"
+    },
+    {
+        id: 3,
+        desc: "Fyler has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
+        name: "Jane Doe",
+        job: "CEO & App Maker"
+    },
+]

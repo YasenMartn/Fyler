@@ -8,8 +8,11 @@
         width: 50%;
         min-height: calc(100vh - 70px);
         @include flexCenter();
+        padding: 0 50px;
         .imgContainer{
             position: relative;
+            width: 100%;
+            min-height: calc(100vh - 70px);
         }
     }
     .right{
@@ -52,7 +55,9 @@
             width: 100%;
             min-height: auto;
             .imgContainer{
-                width: 90%;
+                width: 100%;
+                min-height: 300px;
+
             }
         }
         .right{
