@@ -5,7 +5,7 @@ const Main = () => {
     return (
         <div className='main'>
             <div className="imageContainer">
-                <Image src="/pictures/p1.png" layout="fill" objectFit="contain" />
+                <Image src="/pictures/p1.png" layout="fill" objectFit="contain" priority alt="image" />
             </div>
             <h1 className="title">All your files in one secure location,</h1>
             <h1 style={{ marginBottom: "30px" }} className="title">accessible anywhere.</h1>

@@ -8,7 +8,7 @@ const Services = () => {
         {servicesData.map(service =>(
           <div className="serviceContainer" key={service.id}>
             <div className="imgContainer">
-              <Image src={service.image} width='80px' height="80px" objectFit='contain' />
+              <Image src={service.image} width='80px' height="80px" objectFit='contain' alt="image" />
             </div>
             <div className="infoContainer">
               <h2 className="title">{service.title}</h2>

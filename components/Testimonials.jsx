@@ -5,7 +5,7 @@ const Testimonials = () => {
   return (
     <div className='testimonials'>
         {testimons.map(item => (
-            <div className='testimonContainer'>
+            <div className='testimonContainer' key={item.id}>
                 <div className="top">
                     {item.desc}
                 </div>

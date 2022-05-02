@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className="logoContainer">
-        <Image src="/pictures/logo.png" width="40" height="40" objectFit='contain' />
+        <Image src="/pictures/logo.png" width="40" height="40" objectFit='contain' alt="image" />
         <span className="logoName">Fyler</span>
       </div>
       <div className="naviesContainer">

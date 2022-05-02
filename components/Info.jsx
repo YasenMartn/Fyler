@@ -6,7 +6,7 @@ const Info = () => {
         <div className='infoPage'>
             <div className="left">
                 <div className="imgContainer">
-                    <Image src="/pictures/p2.png" layout='fill' objectFit='contain' />
+                    <Image src="/pictures/p2.png" layout='fill' objectFit='contain' alt="image" />
                 </div>
             </div>
             <div className="right">
